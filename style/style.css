@@ -80,6 +80,7 @@ h1 {
 
 .information{
   color:#08216c;
+  background-color: #000104;
   font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 700;
@@ -112,17 +113,86 @@ img:hover {
 /*media responsive for phones*/
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
   .people{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 0;
     padding: 25px;
     padding-top: 20px;
     background-color: rgb(2, 2, 16);
   }
-  .btn1 {
+  .btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 119);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    height: 60px;
+  }
+  .btn2{
+    background-color: #08216c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 4px;
+    margin-left: 10%;
+    border-radius: 50%;
+  }
+  .btn2:hover{
+    background-color: #000104;
+    color: red;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+  .information{
+    color:#08216c;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  img {
+    width: 250px;
+  }
+}
+
+/*media responsive for tablets*/
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .people{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 25px;
+    padding-top: 20px;
+    background-color: rgb(2, 2, 16);
+  }
+  .btn1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,11 +211,23 @@ img:hover {
     transition: all 0.3s ease-in-out;
     width: 100px;
     height: 60px;
-  
   }
-  .btn1:hover{
-    background-color: rgb(236, 236, 245);
-    color: rgb(3, 0, 0);
+  .btn2{
+    background-color: #08216c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 4px;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+  .btn2:hover{
+    background-color: #000104;
+    color: red;
     transform: scale(1.1);
     transition: all 0.5s ease;
   }
@@ -162,24 +244,5 @@ img:hover {
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-  
-  }
-  img {
-    width: 250px;
-    height: 350px;
-    border-radius: 10%;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    border: 2px solid rgb(226, 199, 199);
-  }
-  img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-  }
-  .btn2{
-    background-color: #08216c; /* Green */
-    border: none;
-    color: white;
   }
 }
-
